@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="=utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <title>Excel</title>
+        <header>Excel Converter</header>
+    </head>
+
+    
+    
+
+    <body>
+        
+        
+        <div class= "form">
+            <div class = "fetch">
+                <!--1st part-->
+            <input type="text" id="data1" placeholder="Column 1" autocomplete="off"></br>
+            <input type="text" id="data2" placeholder="Column 2" autocomplete="off"></br>  
+            <input type="text" id="data3" placeholder="Column 3" autocomplete="off"></br>
+            <input type="text" id="data4" placeholder="Column 4" autocomplete="off"></br>
+            <input type="text" id="data5" placeholder="Column 5" autocomplete="off"></br>
+            </div>
+            <!--2nd part-->
+            <div class="two">
+            <input type="text" id="data6" placeholder="Column 6" autocomplete="off"></br>
+            <input type="text" id="data7" placeholder="Column 7" autocomplete="off"></br>
+            <input type="text" id="data8" placeholder="Column 8" autocomplete="off"></br>
+            <input type="text" id="data9" placeholder="Column 9" autocomplete="off"></br>
+            <input type="text" id="data10" placeholder="Column 10" autocomplete="off"></br>
+        </div>
+            
+            <button type="button" class="btn btn-outline-danger" id="btn1" onclick="upload()">Save</button></br>
+            <div class ="convert">
+            Click to Export the table to Excel
+            <button type="button" class="btn btn-outline-light" id ="btn2" onclick="convert()">Export to Excel</button></div>
+            <div class="noft">
+            Total Columns:</br>
+            <input type="text" id="n"></br>
+            <button type="button" class="btn btn-outline-light" id="btn3"  onclick="noft()">Confirm</button></div>
+            </div>
+        </div>
+        
+
+    
+        <div id="dataholder" >
+            <table id = "table" style="width:100%">
+              
+                
+            </table>
+             
+        </div>
+        
+        <script src="app.js" charset="utf-8"></script>
+        <script src="table2excel.js"></script>
+
+    </body>
+</html>
